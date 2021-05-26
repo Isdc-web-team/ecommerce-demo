@@ -1,9 +1,10 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import FoodDataProvider from '../provider/reducers/cartProvider';
+import Cart from './Cart/Cart';
+import Checkout from './Checkout/Checkout';
 import Home from './Home/Home';
 import ProductDetails from './Home/ProductDetails';
 import Navbar from './Navbar/Navbar';
-import Cart from './Cart/Cart';
 
 
 const App = () => {
@@ -22,6 +23,9 @@ const App = () => {
 					</Route>
 					<Route path="/cart">
 						<Cart />
+					</Route>
+					<Route path="/checkout" >
+						<Checkout />
 					</Route>
 				</Switch>
 			</BrowserRouter>

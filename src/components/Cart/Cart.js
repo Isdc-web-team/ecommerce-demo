@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import { removeProductFromCart } from '../../provider/actions/cartAction';
 import { FoodDataContext } from '../../provider/reducers/cartProvider';
 
@@ -37,7 +38,7 @@ const Cart = () => {
                         <div className="card-body">
                             <h5 className="card-title py-3">  Total price: $ {totalPrice} </h5>
 
-                            <button className="btn btn-primary" >Checkout</button>
+                            <Link to="/checkout" className="btn btn-primary" >Checkout</Link>
                         </div>
                     </div>
                 </div>
